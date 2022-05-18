@@ -1,0 +1,95 @@
+body{
+    background-image: url("../image/joanna-kosinska-7ACuHoezUYk-unsplash.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    text-align: center;
+}
+.body1{
+    background-image: none;
+    background-color: #f2f2f2;
+}
+.heading{
+    padding: 40px 30px;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Square Peg', cursive;
+    font-weight: 900;
+    font-size: 5rem;
+}
+#log{
+    padding: 20px;
+}
+.box{
+    width: 60%;
+    height: auto;
+    margin: 10% auto;
+    border: none;
+    text-align: center;
+
+}
+.first{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+}
+h1{
+    color: white;
+}
+.placeholder{
+    backface-visibility: hidden;
+    background: none;
+    border-color: rgb(179, 179, 229);
+    /* color: beige; */
+}
+.placeholder:hover{
+    backface-visibility: visible;
+    background: none;
+    /* background-color: rgb(59, 97, 120); */
+}
+
+.icon{
+    color: white;
+    
+    font-size: 1.2rem;
+    padding: 0 0.2rem 0 0;
+}
+.button{
+    background-color: rgb(11, 11, 87);
+    margin-top:15px ;
+    border-color: rgb(6, 6, 105);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+table{
+    /* border-collapse: collapse; */
+    width: 100%;
+    color: #588c7e;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+}
+.innertable{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+}
+small{
+    font-size: .8rem;
+}
+.icon{
+    color: fff;
+}
+td{
+    padding: 2% 0 4% 6%;
+}
+.button{
+    background-color: rgb(11, 11, 87);
+    margin-top:7px ;
+    border-color: rgb(6, 6, 105);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}

@@ -1,0 +1,313 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/9db75980d8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&family=Averia+Sans+Libre&family=Beau+Rivage&family=Montserrat:ital,wght@0,100;0,400;0,900;1,100;1,400&family=Roboto+Mono&family=Rubik:wght@500&family=Square+Peg&family=Tapestry&family=Ubuntu:wght@300&family=Updock&display=swap" rel="stylesheet"> -->
+<link rel="stylesheet" href="{% static '../static/css/main.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&family=Averia+Sans+Libre&family=Beau+Rivage&family=Bebas+Neue&family=Koulen&family=Macondo&family=Montserrat:ital,wght@0,100;0,400;0,900;1,100;1,400&family=Roboto+Mono&family=Rubik:wght@500&family=Square+Peg&family=Tapestry&family=Truculenta:opsz@12..72&family=Ubuntu:wght@300&family=Updock&display=swap" rel="stylesheet">
+<style>
+  /* From uiverse.io by @Voxybuns */
+/* From uiverse.io by @alexroumi */
+.b {
+  padding: 10px;
+  font-size: 15px;
+  outline: none;
+  border: 2px solid black;
+  background-color: white;
+  color: white;
+  position: relative;
+  letter-spacing: 1px;
+ }
+ 
+ .b::before {
+  content: 'Answer';
+  /*Button's value/text-content */
+  position: absolute;
+  top: -14%;
+  left: 7%;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.15s ease-in-out;
+  font-weight: bold;
+ }
+ 
+ .b:hover::before {
+  top: 0;
+  left: 0;
+ }
+   /* From uiverse.io by @G4b413l */
+.chaotic-orbit {
+  --uib-size: 25px;
+  --uib-speed: 1.5s;
+  --uib-color: black;
+  position: absolute;
+  left: 27%;
+  top: 21%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--uib-size);
+  width: var(--uib-size);
+  animation: rotate936 calc(var(--uib-speed) * 1.667) infinite linear;
+ }
+ 
+ .chaotic-orbit::before,
+ .chaotic-orbit::after {
+  content: '';
+  position: absolute;
+  height: 60%;
+  width: 60%;
+  border-radius: 50%;
+  background-color: var(--uib-color);
+  will-change: transform;
+  flex-shrink: 0;
+ }
+ 
+ .chaotic-orbit::before {
+  animation: orbit var(--uib-speed) linear infinite;
+ }
+ 
+ .chaotic-orbit::after {
+  animation: orbit var(--uib-speed) linear calc(var(--uib-speed) / -2)
+     infinite;
+ }
+ 
+ @keyframes rotate936 {
+  0% {
+   transform: rotate(0deg);
+  }
+ 
+  100% {
+   transform: rotate(360deg);
+  }
+ }
+ 
+ @keyframes orbit {
+  0% {
+   transform: translate(calc(var(--uib-size) * 0.5)) scale(0.73684);
+   opacity: 0.65;
+  }
+ 
+  5% {
+   transform: translate(calc(var(--uib-size) * 0.4)) scale(0.684208);
+   opacity: 0.58;
+  }
+ 
+  10% {
+   transform: translate(calc(var(--uib-size) * 0.3)) scale(0.631576);
+   opacity: 0.51;
+  }
+ 
+  15% {
+   transform: translate(calc(var(--uib-size) * 0.2)) scale(0.578944);
+   opacity: 0.44;
+  }
+ 
+  20% {
+   transform: translate(calc(var(--uib-size) * 0.1)) scale(0.526312);
+   opacity: 0.37;
+  }
+ 
+  25% {
+   transform: translate(0%) scale(0.47368);
+   opacity: 0.3;
+  }
+ 
+  30% {
+   transform: translate(calc(var(--uib-size) * -0.1)) scale(0.526312);
+   opacity: 0.37;
+  }
+ 
+  35% {
+   transform: translate(calc(var(--uib-size) * -0.2)) scale(0.578944);
+   opacity: 0.44;
+  }
+ 
+  40% {
+   transform: translate(calc(var(--uib-size) * -0.3)) scale(0.631576);
+   opacity: 0.51;
+  }
+ 
+  45% {
+   transform: translate(calc(var(--uib-size) * -0.4)) scale(0.684208);
+   opacity: 0.58;
+  }
+ 
+  50% {
+   transform: translate(calc(var(--uib-size) * -0.5)) scale(0.73684);
+   opacity: 0.65;
+  }
+ 
+  55% {
+   transform: translate(calc(var(--uib-size) * -0.4)) scale(0.789472);
+   opacity: 0.72;
+  }
+ 
+  60% {
+   transform: translate(calc(var(--uib-size) * -0.3)) scale(0.842104);
+   opacity: 0.79;
+  }
+ 
+  65% {
+   transform: translate(calc(var(--uib-size) * -0.2)) scale(0.894736);
+   opacity: 0.86;
+  }
+ 
+  70% {
+   transform: translate(calc(var(--uib-size) * -0.1)) scale(0.947368);
+   opacity: 0.93;
+  }
+ 
+  75% {
+   transform: translate(0%) scale(1);
+   opacity: 1;
+  }
+ 
+  80% {
+   transform: translate(calc(var(--uib-size) * 0.1)) scale(0.947368);
+   opacity: 0.93;
+  }
+ 
+  85% {
+   transform: translate(calc(var(--uib-size) * 0.2)) scale(0.894736);
+   opacity: 0.86;
+  }
+ 
+  90% {
+   transform: translate(calc(var(--uib-size) * 0.3)) scale(0.842104);
+   opacity: 0.79;
+  }
+ 
+  95% {
+   transform: translate(calc(var(--uib-size) * 0.4)) scale(0.789472);
+   opacity: 0.72;
+  }
+ 
+  100% {
+   transform: translate(calc(var(--uib-size) * 0.5)) scale(0.73684);
+   opacity: 0.65;
+  }
+ }
+ @media (max-width: 768px) {
+  .spinner{
+    left: 63%;
+    top:21%;
+  }
+}
+td{
+  text-align: center;
+}
+.ans{
+  margin-top: 25px;
+}
+ 
+</style>
+</head>
+<body class="body1">
+   <section id="Title">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar1">
+      <a class="navbar-brand" href="/home/">Ask It!</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+   
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link home" href="home/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ask">Ask</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="logout">Logout</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" method="POST">
+          {%csrf_token%}
+          <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+   </section>
+   <br><br><br><br>
+   <h2 style="margin-left:10% ; font-family: 'Averia Sans Libre', cursive; font-weight: 800px; display:inline">Hello {{uk}}!</h2>
+   <div class="chaotic-orbit spinner"></div>
+   <section id="content">
+     {% for ans,posts,user in zipp %}
+     <br>
+     <div class="container-fluid box">
+       <div class="container-fluid heading">
+         <table>
+           <tr>
+             <td class="user-info"><a href="../html/login.html"><i class="fa-solid fa-circle-user icon"></i></a></td>
+             <td class="user-info">{{user}}</td>
+           </tr>
+         </table>
+       </div>
+       <hr>
+       <h3>{{posts.question}}</h3>
+       <div class="container-fluid inside-box"> 
+         <p style="font-size: 1.4rem; font-family: 'Averia Sans Libre', cursive; font-weight:400">{{ans.answer}}</p>
+       </div>
+       <table>
+         <tr>
+           <td class="comments">
+            <i class="fa-solid fa-thumbs-up icon-comments"></i>
+            {{ans.like}}
+           </td>
+           <td class="comments" style="padding: 10px 0 0 0;">
+            <i class="fa-solid fa-thumbs-down icon-comments"></i>
+             {{ans.dislike}}
+           </td>
+            <td class="comments">
+              <form action="/answering/" id="form1" method="POST">
+                {%csrf_token%}
+                 <div class="form-group">
+                    <input type="hidden" name="id" value="{{posts.id}}">
+                
+                    <button class="ans b">Answer</button>
+                 </div>
+               </form>
+
+            </td>
+         </tr>
+       </table>
+     </div>
+     <br>
+ 
+
+     {% endfor %}
+     
+   </section>
+
+</body>
+</html>
+
+<!-- HTML !-->
+

@@ -1,0 +1,90 @@
+.navbar1{
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-color:black ;
+    border-radius: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* lightblue */
+.navbar-brand{
+    font-family: 'Square Peg', cursive;
+    font-weight: 900;
+    font-size: 3rem;
+}
+.btn{
+    color: white;
+    background-color: black;
+}
+.body1{
+    background-color: black;
+}
+.btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.box{
+    text-align: left;
+    width: 80%;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.163);
+    padding: 30px;
+    /* border-style: solid; */
+    border-width: solid;
+    border-color: black;
+    box-shadow: 5px 10px #888888;
+    margin: 20px rgba(211, 211, 211, 0);
+    border-radius: 8%;
+}
+.comments{
+    width: 12%;
+}
+h4{
+    font-family: 'Rubik', sans-serif;
+}
+.heading{
+    font-family: 'Averia Sans Libre', cursive;
+    font-weight: 600;
+    font-size: large;
+}
+@media (min-width : 1029px){
+   .home{
+    margin: 0 30px 0 30px;
+   }
+}
+@media (max-width : 1028px) {
+    .home{
+        margin: 0 0 0 0;
+    }
+    
+}
+hr{
+    border-style: solid;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.196);
+
+}
+.icon{
+    color: black;
+    font-size: 1.9rem;
+    padding: 0 0.2rem 0 0;
+}
+.icon-comments{
+    color: rgba(0, 0, 0, 0.768);
+    font-size: 1.9rem;
+    padding: 0 0.2rem 0 0;
+    padding: 10px 5px 5px 3px;
+}
+
+.inside-box{
+    margin: 0;
+    padding: 0;
+}
+.user-info{
+    padding: 10px 10px 10px 0;
+    text-align: left;
+    
+}
+#Title{
+    margin-bottom: 50px;
+}
