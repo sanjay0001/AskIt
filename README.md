@@ -11,3 +11,6 @@ Database - MySql
 Database description:
     * The Mysql database contains a tables like user, questions and answers. Here User is a foreign key for questions table and questions is foriegn key for answers table.
 I splitted the tables to reduce redundancy.
+
+
+[![Deploy to heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sanjay0001/AskIt/edit/main/README.md)
